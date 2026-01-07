@@ -1,21 +1,40 @@
 .code16
+.global main
+
+# _start
+xor %ax, %ax
+mov %ax, %ds
+cld
+cli
+call main
+
+# data
+msg: .asciz "Hello, World!\n"
 
 
 # print "Hello, World!"
 main: 
-  #mov $msg, %si   # load "Hello, World" to si
-  mov 0x0E, %ah   # syscall(?) for putchar
-  LS: # for each letter in the message
-  lodsb           # get a char from si
-  or  $0, %al     # if it's null
-  jmp halt        # then halt
-  int $0x10       # otherwise call interrupt
-  jmp LS          # jump to loopstart
+  mov $msg, %bx
+  call printz
+  jmp exit
 
-msg: .asciz "Hello, World!"
+# print zero-terminated string at %bx
+printz:
+  mov $0xE, %ah      # print a char on interrupt
+  LPRINTS:           # while printing
+  movb (%bx), %al    # move a byte from address in $bx to $al
+  or %al, %al        # check if $al is 0
+  jz LPRINTE         # jump to print loop end on NULL
+  int $0x10          # print $al onto the screen
+  inc %bx            # bx++
+  jmp LPRINTS        # jump to print loop start
+  LPRINTE:           # end printing
+  ret                # return
+  
 
 # halt until OS shuts down
-halt: hlt 
+exit: hlt 
 
 # padding and magic
+. = 510
 .byte 0x55, 0xAA
