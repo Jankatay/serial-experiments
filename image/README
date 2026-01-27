@@ -1,0 +1,15 @@
+## What does this do?
+When assembled in debian, and not void-linux for an unkown reason; produces a png file. 
+
+## Why did you do this?
+I wanted to see if I can learn about formats by just reading the official, legal specification.  
+
+It went surprisingly well. Even the CRC was obtainable thanks to crc32 command. The actual IDAT_DATA has to be filtered and compressed tho.
+
+So I relied on gimp and wikipedia to find out what one single pixel compressed looks like in the end and that was the entire outside help needed. 
+
+## Credits
+- https://www.libpng.org/pub/png/spec/1.2/PNG-Structure.html
+- https://en.wikipedia.org/wiki/PNG
+- https://www.gimp.org/
+
