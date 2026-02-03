@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 MAGIC:                                      # PNG magic bytes
 .byte 0x89                                  # Detect transmission systems that do not support 8-bot data.  
 .byte 0x50, 0x4E, 0x47                      # "PNG" in ascii letters
@@ -28,3 +29,11 @@ IDAT_CRC:   .byte 0x18, 0xDD, 0x8D, 0xB0    # same as IHDR_CRC
 IEND_LEN:   .byte 0, 0, 0, 0                # there is no data
 IEND_NAME:  .byte 'I', 'E', 'N', 'D'        # Name is still required
 IEND_CRC:   .byte 0xAE, 0x42, 0x60, 0x82    # crc still required too I think
+=======
+# 0 "main.S"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "main.S"
+>>>>>>> f47b2cc (messing around with image formats)
