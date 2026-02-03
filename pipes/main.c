@@ -8,7 +8,7 @@
 
 
 char** vectorize(char* mem, char seperator, size_t* len);
-void pipeline(size_t vlen; char* vbuf[vlen], size_t vlen);
+void pipeline(size_t vlen, char* vbuf[vlen]);
 
 
 // it's like recursion but through pipes
@@ -18,7 +18,7 @@ int main() {
   size_t len = 0;
   char** vec = vectorize(str, '|', &len);
   if(fork() == 0) {
-    pipeline(vec, len);
+    pipeline(len, vec);
     free(vec);
     exit(EXIT_SUCCESS);
   }
@@ -29,7 +29,7 @@ int main() {
 
 
 // recursively fork to pipe multiple commands
-void pipeline(size_t vlen; char* vbuf[vlen], size_t vlen) {
+void pipeline(size_t vlen, char* vbuf[vlen]) {
   for(int i = vlen-1; i >= 0; i--) {
     // pipe
     int pipfd[2];
