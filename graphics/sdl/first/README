@@ -1,0 +1,5 @@
+Just compiled sdl3 statically from source and trying it out for first time
+credits - https://github.com/libsdl-org/SDL/blob/main/examples/renderer/01-clear/clear.c
+
+// as far as I under
+#define SDL_MAIN_USE_CALLBACKS 1
