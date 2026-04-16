@@ -1,0 +1,19 @@
+$ make main
+gcc -g -o main main.c
+$ ./main 
+echo a | cat | cat
+a // looks fine
+
+echo b | cat | cat
+b // looks fine
+
+echo | cat | cat
+b // does not look fine
+
+echo a | awk '{print $1"b"}' | awk '{print $1"c"}'
+a 
+// I press <Ctrl-C> here.
+cat: cat: No such file or directory
+cat: awk: No such file or directory
+cat: '{print $1"b"}': No such file or directory
+cat: exit: No such file or directory
