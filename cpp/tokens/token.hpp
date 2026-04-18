@@ -11,24 +11,27 @@ using namespace std;
 struct Token {
   enum Type {NUM, ADD, SUB, MUL, DIV, POPEN, PCLOSE, TEOF, TEOL, ERR} kind;
   double val = 0;
+  Token(double num): kind(NUM), val(num) {}
 };
 
 // stream of tokens!!
 class TStream {
-  istream& source; // reads from here
+  istream& source = cin; // reads from here
+  bool iseof = false; // source ended
   public:
-  TStream(istream& stream): source(stream) {} // read tokens from the given stream
+  TStream(istream& stream): source(stream), iseof(false) {} // read tokens from the given stream
   TStream(): TStream(cin) {} // read inputs from stdin 
+  bool eof() { return iseof; } // read inputs from stdin 
 
   // read an operator into tok
   Token get() {
-    Token tok;
-    tok.val = 0; // init in case
+    Token tok(0);
     char ch = '\0';
 
     // read from stream
     source >> ch;
-    if((source.eof()) || (ch == '\n')) { 
+    if(source.eof()) { 
+      iseof = true;
       tok.val = EOF; 
       tok.kind = Token::TEOF; 
       return tok; 
@@ -42,7 +45,7 @@ class TStream {
       case '-': tok.val = '-'; tok.kind = Token::SUB; return tok;
       case '*': tok.val = '*'; tok.kind = Token::MUL; return tok;
       case '/': tok.val = '/'; tok.kind = Token::DIV; return tok;
-      case '\n': tok.val = '\n'; tok.kind = Token::TEOL; return tok;
+      case ';': tok.val = ';'; tok.kind = Token::TEOL; return tok;
     }
 
     // numbers

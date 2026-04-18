@@ -18,7 +18,10 @@ double primary(TStream& tokens);
 
 int main() {
   TStream tokens{};
-  cout << "= " << expression(tokens) << endl;
+  while(!tokens.eof()) {
+    double res = expression(tokens);
+    cout << "= " << res << endl;
+  }
   return 0;
 }
 
@@ -32,7 +35,7 @@ double expression(TStream& tokens) {
     switch(next.kind) { 
       case Token::ADD: expval += term(tokens); continue;
       case Token::SUB: expval -= term(tokens); continue;
-      case Token::TEOF: return expval;
+      case Token::TEOF: case Token::TEOL: return expval;
       default: tokens.put_back(next); return expval;
     }
   }
@@ -55,6 +58,10 @@ double term(TStream& tokens) {
 double primary(TStream& tokens) {
   // numbers
   Token t = tokens.get();
+  if((t.kind == Token::TEOF) || (t.kind == Token::TEOL)) {
+    tokens.put_back(t);
+    return 0;
+  }
   if(t.kind == Token::NUM) return t.val;
 
   // invalid
