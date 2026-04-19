@@ -1,0 +1,9 @@
+# Hashes of file build rules.
+51e986594d7da48e978e5a33d27f2d18 _deps/fltk-build/CMakeFiles/uninstall
+f1245064e98431c3e414c6a281c74a00 _deps/fltk-build/src/cursor-shape-protocol.c
+c116029bbf66a45b2fde5c02724dd763 _deps/fltk-build/src/gtk-shell-protocol.c
+c30b945fd53ff50aca161970f7c3e7a5 _deps/fltk-build/src/tablet-protocol.c
+44c5c90a1e48f43d966e4f17c039af6b _deps/fltk-build/src/text-input-protocol.c
+65915a1ab3f1e9bf4b23e9d821e06109 _deps/fltk-build/src/xdg-decoration-protocol.c
+c4341fb2cf3f78dcec55d9c5cdc29cb1 _deps/fltk-build/src/xdg-dialog-protocol.c
+380a6f9c2ce56b0c256da0c44cdd111c _deps/fltk-build/src/xdg-shell-protocol.c

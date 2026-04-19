@@ -1,0 +1,166 @@
+_deps/fltk-build/src/CMakeFiles/fltk.dir/Fl_File_Browser.cxx.o: \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/Fl_File_Browser.cxx \
+ /usr/include/stdc-predef.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_File_Browser.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Browser.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Browser_.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Group.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Widget.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-build/src/../FL/fl_config.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Export.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/platform_types.h \
+ /usr/include/time.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/stddef.h \
+ /usr/include/bits/time.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
+ /usr/include/bits/timex.h /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/timer_t.h \
+ /usr/include/bits/types/struct_itimerspec.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/dirent.h /usr/include/bits/dirent.h \
+ /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/bits/pthread_stack_min-dynamic.h \
+ /usr/include/bits/dirent_ext.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/fl_casts.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/core/function_types.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Enumerations.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Export.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/fl_types.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/fl_attr.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/core/events.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/core/options.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/core/pen_events.H \
+ /usr/include/c++/14.2/cstdint \
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
+ /usr/include/bits/stdint-uintn.h /usr/include/bits/stdint-least.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Widget_Tracker.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/fl_utf8.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
+ /usr/include/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/include/asm/posix_types.h /usr/include/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h /usr/include/bits/statx-generic.h \
+ /usr/include/bits/types/struct_statx_timestamp.h \
+ /usr/include/bits/types/struct_statx.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Enumerations.H \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/14.2/vector \
+ /usr/include/c++/14.2/bits/requires_hosted.h \
+ /usr/include/c++/14.2/bits/stl_algobase.h \
+ /usr/include/c++/14.2/bits/functexcept.h \
+ /usr/include/c++/14.2/bits/exception_defines.h \
+ /usr/include/c++/14.2/bits/cpp_type_traits.h \
+ /usr/include/c++/14.2/bits/version.h \
+ /usr/include/c++/14.2/ext/type_traits.h \
+ /usr/include/c++/14.2/ext/numeric_traits.h \
+ /usr/include/c++/14.2/bits/stl_pair.h /usr/include/c++/14.2/type_traits \
+ /usr/include/c++/14.2/bits/move.h /usr/include/c++/14.2/bits/utility.h \
+ /usr/include/c++/14.2/bits/stl_iterator_base_types.h \
+ /usr/include/c++/14.2/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/14.2/bits/concept_check.h \
+ /usr/include/c++/14.2/debug/assertions.h \
+ /usr/include/c++/14.2/bits/stl_iterator.h \
+ /usr/include/c++/14.2/bits/ptr_traits.h \
+ /usr/include/c++/14.2/debug/debug.h \
+ /usr/include/c++/14.2/bits/predefined_ops.h \
+ /usr/include/c++/14.2/bits/allocator.h \
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/14.2/bits/new_allocator.h /usr/include/c++/14.2/new \
+ /usr/include/c++/14.2/bits/exception.h \
+ /usr/include/c++/14.2/bits/memoryfwd.h \
+ /usr/include/c++/14.2/bits/stl_construct.h \
+ /usr/include/c++/14.2/bits/stl_uninitialized.h \
+ /usr/include/c++/14.2/ext/alloc_traits.h \
+ /usr/include/c++/14.2/bits/alloc_traits.h \
+ /usr/include/c++/14.2/bits/stl_vector.h \
+ /usr/include/c++/14.2/initializer_list \
+ /usr/include/c++/14.2/bits/stl_bvector.h \
+ /usr/include/c++/14.2/bits/functional_hash.h \
+ /usr/include/c++/14.2/bits/hash_bytes.h \
+ /usr/include/c++/14.2/bits/refwrap.h /usr/include/c++/14.2/bits/invoke.h \
+ /usr/include/c++/14.2/bits/stl_function.h \
+ /usr/include/c++/14.2/backward/binders.h \
+ /usr/include/c++/14.2/bits/range_access.h \
+ /usr/include/c++/14.2/bits/vector.tcc \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Scrollbar.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Slider.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Valuator.H \
+ /usr/include/c++/14.2/string /usr/include/c++/14.2/bits/stringfwd.h \
+ /usr/include/c++/14.2/bits/char_traits.h \
+ /usr/include/c++/14.2/bits/postypes.h /usr/include/c++/14.2/cwchar \
+ /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/c++/14.2/bits/localefwd.h \
+ /usr/include/c++/14.2/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/14.2/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/14.2/iosfwd \
+ /usr/include/c++/14.2/cctype /usr/include/ctype.h \
+ /usr/include/c++/14.2/bits/ostream_insert.h \
+ /usr/include/c++/14.2/bits/cxxabi_forced.h \
+ /usr/include/c++/14.2/bits/basic_string.h \
+ /usr/include/c++/14.2/ext/string_conversions.h \
+ /usr/include/c++/14.2/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h \
+ /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/14.2/bits/std_abs.h \
+ /usr/include/c++/14.2/cstdio /usr/include/c++/14.2/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h /usr/include/c++/14.2/bits/charconv.h \
+ /usr/include/c++/14.2/bits/basic_string.tcc \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Rect.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Widget.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Image.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_File_Icon.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/filename.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/Fl_System_Driver.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/filename.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Preferences.H \
+ /usr/include/c++/14.2/stdlib.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/fl_draw.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Graphics_Driver.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Device.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Plugin.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Preferences.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Image.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Bitmap.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_Pixmap.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/Fl_RGB_Image.H \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/../FL/fl_string_functions.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-src/src/flstring.h \
+ /home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-build/src/../config.h

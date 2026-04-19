@@ -1,4 +1,4 @@
-CPP = g++ -Os -Wall -Wextra -Weffc++ -Werror
+CPP = g++ -O0 -Wall -Wextra -Weffc++ -Werror -g
 COMPRESS = gzexe
 
 run: main
@@ -6,8 +6,6 @@ run: main
 
 main: main.cpp
 	$(CPP) -o $@ $<
-	$(COMPRESS) $@
-	rm $@~
 
 .PHONY: clean
 clean:
