@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/jan/projects/git/serial-experiments/graphics/fltk/simple_window/build/_deps/fltk-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
