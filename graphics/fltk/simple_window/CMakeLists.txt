@@ -1,5 +1,5 @@
 # init
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 4.0)
 project(simple_window)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
