@@ -30,7 +30,6 @@ foreach(SOURCE_FILE ${SOURCE_FILES})
 
   # add BIN_FILE as an executable
   add_executable(${BIN_FILE} WIN32 MACOSX_BUNDLE ${SOURCE_FILE})
-  target_link_libraries(${BIN_FILE} PRIVATE ${BIN_LIB}) 
   #target_link_libraries(${BIN_FILE} PUBLIC fltk::fltk)
   # for each file under same folder as BIN_FILE
   message(STATUS "Searching ${DIR_PATH}")
@@ -44,8 +43,13 @@ foreach(SOURCE_FILE ${SOURCE_FILES})
   endforeach(LIB_FILE ${LIB_FILES})
 
   #link the custom library with the BIN_FILE
-  message(STATUS "Source files are ${LIB_SOURCE}")
-  add_library(${BIN_LIB} STATIC ${LIB_SOURCE}) 
-  target_link_libraries(${BIN_LIB} PUBLIC fltk::fltk) 
+  if(NOT ${LIB_SOURCE} EQUAL "")
+    message(STATUS "Source files are ${LIB_SOURCE}")
+    add_library(${BIN_LIB} STATIC ${LIB_SOURCE}) 
+    target_link_libraries(${BIN_FILE} PRIVATE ${BIN_LIB}) 
+    target_link_libraries(${BIN_LIB} PUBLIC fltk::fltk) 
+  else()
+    target_link_libraries(${BIN_FILE} PUBLIC fltk::fltk) 
+  endif(NOT ${LIB_SOURCE} EQUAL "")
 endforeach(SOURCE_FILE ${SOURCE_FILES})
 
