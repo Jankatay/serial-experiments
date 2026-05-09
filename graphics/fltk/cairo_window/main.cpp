@@ -7,6 +7,8 @@ using namespace Fl;
 static bool unpaused = true;
 
 class Shortcut_Window : public Fl_Cairo_Window {
+  public:
+  Shortcut_Window(int W, int H, const char* L): Fl_Cairo_Window(W, H, L) {}
   // override the event handler to pause on space-bar
   int handle(int event) {
     // handle enter
@@ -27,7 +29,7 @@ class Shortcut_Window : public Fl_Cairo_Window {
 // draw a simple window with libcairo support
 // ----------------------------------------------------------
 int main(int argc, char* argv[]) {
-  Fl_Cairo_Window win(512, 360, "Cairo Window");            
+  Shortcut_Window win(512, 360, "Cairo Window");            
   win.color(fl_rgb_color(Surface.R, Surface.G, Surface.B)); 
   win.resizable(&win);
   win.set_draw_cb(cb_diagonal_line);                        

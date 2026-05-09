@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 4.0)
 project(cairo_window)
 
 # attributes
-set(CMAKE_BUILD_TYPE MinSizeRel)
+set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(FLTK_OPTION_CAIRO_WINDOW ON)
 
@@ -51,5 +51,6 @@ foreach(SOURCE_FILE ${SOURCE_FILES})
   else()
     target_link_libraries(${BIN_FILE} PUBLIC fltk::fltk) 
   endif(NOT ${LIB_SOURCE} EQUAL "")
+  set(LIB_SOURCE) # no longer needed
 endforeach(SOURCE_FILE ${SOURCE_FILES})
 
