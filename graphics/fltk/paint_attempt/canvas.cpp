@@ -64,12 +64,11 @@ void Canvas::handle_move() {
 // draw based on given info
 void Canvas::draw_overlay() {
   if(!drawing) return; 
-  for(const State& state : vec) {
+  const State& state = vec.back();
     Fl_Overlay_Window::draw();
     fl_line_style(FL_SOLID, state.width);
     if(state.agenda == Draw_Circle) fl_circle(state.mouseX, state.mouseY, state.width/2);
     else if(state.agenda == Draw_Line) fl_line(state.prevX, state.prevY, state.mouseX, state.mouseY);
-  }
   prevX = mouseX;
   prevY = mouseY;
 }
