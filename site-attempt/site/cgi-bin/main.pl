@@ -1,24 +1,34 @@
 #!/usr/bin/env perl
 
+# only default imports
+use Symbol;
 use warnings;
 use strict;
-
-# HTTP headers
-my $boundary = "Ucmd3AW\$|o-!2.<-<!:<~~-`ST-98o+-}`o-%[2ix-|\$nA\"-:yx?";
-print "Content-type: video/mp4\r\n";
-print "Content-Disposition: attachment\r\n";
-print "Content-Type: multipart/form-data; boundary=$boundary\r\n\r\n";
-
+use IPC::Open3;
 
 # get user input 
-print {*STDERR} "Enter link: ";
-my $link = <STDIN>;
+my $link = "https://www.youtube.com/watch?v=tPEE9ZwT";
 
-# download 
-open(my $pipe_fh, "-|", "yt-dlp -t mp4 -o - $link --no-exec");
+# set immediate-flush for the outputs
+$| = 1;
 
-# write to output as it downloads with seperators
-my $buf = "";
-while(sysread($pipe_fh, $buf, 512) != 0) {
-  print("\r\n--$boundary\nContent-Type: video/mp4\r\n\r\n$buf");
-} print("\r\n--$boundary--"); # finish
+# start downloading the data
+#chdir "/tmp/"; # yt-dlp requires write permissions to working directory even if not writing anything
+my $cmd = "yt-dlp -q -t mp4 --max-filesize 50M --no-continue $link --no-exec -o - 2>/dev/null";
+open(my $download, $cmd);
+
+# make sure you are the 
+
+# HTTP download headers
+print "Content-Encoding: chunked\r\n";
+print "Content-type: video/mp4\r\n";
+print "Content-Disposition: attachment\r\n\r\n";
+
+# send to client as it downloads, 512 bytes at a time
+while(sysread($download, my $buf, 512) > 0) {
+  print "$buf";
+}
+
+
+
+
