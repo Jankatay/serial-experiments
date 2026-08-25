@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+
+# init and get 
+MOON_NEW="🌕"
+WANING_CRESCEND="🌔"
+FIRST_QUARTER="🌓"
+WANING_GIBBOUS="🌒"
+MOON_FULL="🌑"
+brightness="$(brightnessctl -m | awk -F ',' '{print $4}' | tr -d '%')"
+
+# show
+if (( "$brightness" > 80 )); then
+  echo "$MOON_FULL"
+elif (( "$brightness" > 60 )); then
+  echo "$WANING_GIBBOUS"
+elif (( "$brightness" > 40 )); then
+  echo "$FIRST_QUARTER"
+elif (( "$brightness" > 20 )); then
+  echo "$WANING_CRESCEND"
+else 
+  echo "$MOON_NEW"
+fi

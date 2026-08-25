@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+# init 
+EMPTY="  "
+LOW=" "
+HALF="  "
+HIGH=" "
+FULL=" "
+CHARGING=""
+
+# get
+battery_status="$(acpi)"
+percent_status="$(awk '{print $4}' <<< $battery_status | tr -d '%,')"
+charging_status="$(awk '{print $3}' <<< $battery_status | tr -d ',')"
+
+# show
+if [[ "$charging_status" != "Discharging" ]]; then
+  echo "$CHARGING"
+  exit
+fi
+
+if (( "$percent_status" > 80 )); then
+  echo "$FULL"
+elif (( "$percent_status" > 60 )); then
+  echo "$HIGH"
+elif (( "$percent_status" > 40 )); then
+  echo "$HALF"
+elif (( "$percent_status" > 20 )); then
+  echo "$LOW"
+else 
+  echo "$EMPTY"
+fi
